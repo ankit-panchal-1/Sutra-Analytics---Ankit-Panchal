@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+            background-color: rgba(35, 82, 82, 0.283);
+            border: 1px solid;
+            border-radius:5px ;
+        }
+        h2{
+            color: red;
+            padding: 5px;
+        }
+        p{
+            color: blueviolet;
+            font-size: 20px;
+        }
+        </style>
+</head>
+
+<body>
+    delete account
+    <button onclick="alert('Button click!')" >Click Me</button>
+
+    <button onclick="window.alert('Error: Something went wrong. Please try again later.')">error</button>
+
+    <button onclick="window.alert('warning: you lose the data')" style="color: red;">warning</button>
+
+
+    <p id="element">Hello ankit</p>
+    <button onclick="call()">click</button>
+    <button onclick="update()">update</button>
+    <button onclick="clr()">clear</button>
+    <button onclick="emp()">emp</button>
+</body>
+<script>
+    window.alert("Hello World!")
+</script>
+<script>
+    document.write("<h1>Hello, World!</h1>");
+</script>
+<script>
+  document.write("<div>");
+  document.write("<h2>Welcome to JS. </h2>");
+
+  document.write("</div>");
+document.write("<p>easy to learn</p>");
+document.write("<br><br>");
+document.write("<p>easy to learn</p>");
+</script>
+<script>
+    document.write("Ankit")
+</script>
+<script>
+    function call() {
+        ankit = document.getElementById("element");
+        ankit.innerHTML = "Hello js!";
+    }
+    function update() {
+        element = document.getElementById("element");
+        element.innerHTML = "Hello <strong>js</strong>!";
+    }
+    function clr() {
+        element = document.getElementById("element");
+        element.innerHTML = "";
+    }
+    function emp() {
+        element = document.getElementById("element");
+        element.innerHTML = "<em> hello world </em>";
+    }
+
+
+</script>
+
+</html>

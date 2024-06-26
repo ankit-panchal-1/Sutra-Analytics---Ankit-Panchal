@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* -------------- section ---------------------- */
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #1f242d;
+    overflow: hidden;
+}
+
+h1 {
+    position: relative;
+    font-size: 60px;
+    color: white;
+}
+
+p {
+    position: relative;
+    font-size: 35px;
+    color: #0ef;
+    font-weight: 600;
+}
+
+section .animate {
+    opacity: 0;
+    filter: blur(5px);
+    transition: 1.2s;
+}
+
+section.show-animate .animate {
+    filter: blur(0);
+    opacity: 1;
+}
+
+/* ------------ sec-1 animation --------------*/
+.sec-1 .animate {
+    transform: translateX(-100%);
+}
+
+.sec-1.show-animate .animate {
+    transform: translateX(0);
+}
+
+/* ------------ sec-2 animation --------------*/
+
+.sec-2 .animate {
+    transform: translateX(100%);
+}
+
+.sec-2.show-animate .animate {
+    transform: translateX(0);
+}
+
+/* ------------ sec-3 animation --------------*/
+.sec-3 .animate {
+    transform: scale(.7);
+}
+
+.sec-3.show-animate .animate {
+    transform: scale(1);
+}
+
+.sec-2 p {
+    color: greenyellow;
+}
+
+.sec-3 p {
+    color: rgb(247, 61, 61);
+}
+
+.sec-4 p {
+    color: rgb(191, 236, 245);
+}
+
+/* ----------- sec-4 ---------------- */
+.sec-4 .showRight-animate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1f242d;
+    transition: 1.2s;
+    transition-delay: calc(0.2 * var(--i));
+}
+
+.sec-4.show-animate .showRight-animate {
+    width: 0;
+}
+
+/* ----------- sec-5 ---------------- */
+.sec-5 .images img {
+    max-width: 400px;
+    max-height: 220px;
+    margin: 0 30px;
+    transform: translateX(-150%);
+    transition-delay: calc(0.5 * var(--i));
+}
+
+.sec-5.show-animate .images img {
+    transform: translateX(0);
+}

@@ -1,0 +1,43 @@
+Make a program in which When the mouse pointer enters a <p> element, it should be hidden
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hide the current element on click of a button
+    
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+        </script>
+    
+    </head>
+    
+    <body>
+    
+        <p>
+            I am Technical Writer
+        </p> <p>
+            I am Technical Writer
+        </p> <p>
+            I am Technical Writer
+        </p> <p>
+            I am Technical Writer
+        </p>
+    
+        <button id="btn">
+            Click Me
+        </button> 
+     
+    
+        <script>
+            $(document).ready(function () {
+                $("#btn").mouseenter(function () {
+                    $('p').hide();
+                });
+          
+            });
+        </script>
+    </body>
+    
+    </html>

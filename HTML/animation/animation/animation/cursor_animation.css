@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #2b2b2b;
+  transition: 0.5s;
+}
+
+body.active {
+  background-color: rgb(250, 125, 125);
+}
+
+.navbar {
+  height: 80px;
+  background-color: rgb(17, 17, 17);
+  box-shadow: 0 0 40px black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  transition: 0.5s;
+}
+
+.navbar.active {
+  transform: 0.5s;
+  background-color: rgba(196, 0, 0, 0.476);
+  color: black;
+}
+
+.navbar.active a {
+  color: black;
+}
+
+.navbar_items {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.35s;
+}
+
+.navbar li:hover a {
+  text-decoration: underline;
+  outline: none;
+}
+
+#toggle {
+  height: 31px;
+  width: 60px;
+  background-color: #222;
+  margin-left: 20px;
+  box-shadow: 0 8px 60px rgba(0, 0, 0, 0.1) inset,
+    0 8px 8px rgba(0, 0, 0, 0.1) inset, 0 -4px 4px rgba(0, 0, 0, 0.1) inset,
+    0 0 20px gray;
+  border: 1px solid gray;
+  border-radius: 160px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#toggle.active {
+  background-color: white;
+  box-shadow: 0 2px 60px rgba(0, 0, 0, 0.1) inset,
+    0 2px 8px rgba(0, 0, 0, 0.15) inset, 0 -4px 8px rgba(0, 0, 0, 0.05) inset,
+    0 0 20px lightgray;
+  border: 1px solid gray;
+}
+
+#toggle .indicator {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #444, #222);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+    0 4px 4px rgba(255, 255, 255, 0.2) inset,
+    0 -4px 4px rgba(255, 255, 255, 0.2) inset;
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0.85);
+  transition: 0.5s;
+}
+
+#toggle.active .indicator {
+  left: 29px;
+  background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
+    0 4px 4px rgba(255, 255, 255, 1) inset,
+    0 -4px 4px rgba(255, 255, 255, 1) inset;
+}

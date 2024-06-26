@@ -1,0 +1,284 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Sparten", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+
+}
+
+.header img {
+    width: 100%;
+    height: 272px;
+
+}
+
+.navbar {
+    width: 100%;
+    height: 20%;
+    background: url(./nav.jpg);
+    padding: 10px 0 10px 0;
+    margin: -10px 0 0 0;
+
+}
+
+.navbar a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0 0px 0 70px;
+}
+.navbar .active{
+    color: rgb(0, 0, 0);
+}
+
+.container .leftbar {
+    float: left;
+    background-color: gray;
+}
+
+.container .leftbar .login-page {
+    height: 320px;
+    width: 280px;
+    text-align: center;
+    border: 1px solid white;
+    margin: 10px 10px 12px 10px;
+    background: url(./login.jpg);
+
+
+
+
+}
+
+.container .leftbar .login-page h3,
+.container .leftbar .event h3,
+.container .leftbar .new h3 {
+    color: aliceblue;
+    text-align: center;
+    /* margin: 20px 20px 20px 20px; */
+    border: 1px solid white;
+    background: url(./login2.jpg);
+    padding: 5px 0;
+
+}
+
+.container .leftbar .login-page label {
+    color: aliceblue;
+    font-size: 12px;
+    /* margin: 0 10px 0 10px; */
+}
+
+.container .leftbar .login-page input {
+    width: auto;
+    margin: 20px 0 -20px 0;
+}
+
+.container .leftbar .login-page button {
+    text-align: center;
+    margin: 20px 0 20px 0;
+    width: 80px;
+}
+
+.container .leftbar .login-page .a1 {
+    color: aliceblue;
+    text-align: center;
+}
+
+.container .leftbar .login-page .a2 {
+    color: aqua;
+    margin: 40px 0 20px 0;
+
+}
+
+.container .leftbar .event {
+    height: 320px;
+    width: 280px;
+    text-align: center;
+    border: 1px solid white;
+    margin: 12px 10px 12px 10px;
+    /* background: url(./navbar.jpg); */
+}
+
+.container .leftbar .event img,
+.container .leftbar .new img {
+    width: 280px;
+    height: 290px;
+}
+
+.container .leftbar .new {
+    height: 320px;
+    width: 280px;
+    text-align: center;
+    border: 1px solid white;
+    margin: 12px 10px 12px 10px;
+
+}
+
+.container .bar1 {
+    display: flex;
+}
+
+.container .bar1 img {
+    margin: 0 10px 30px 20px;
+
+}
+.bar2{
+    float: left;
+    width: 400px;
+}
+.bar2 li{
+    font-weight: bolder;
+    font-size: large;
+    margin: 0 0 0 30px;
+}
+.bar2 a{
+    font-weight: bolder;
+}
+.bar2 label{
+    margin: 0 0 120px 30px;
+    color: red;
+    font-weight: bold;
+}
+.bar2 i{
+    margin: 40px 0 0px 30px;
+    color: rgb(137, 183, 244);
+    font-weight: bold;
+    font-size: xx-large;
+    position: absolute;
+}
+.bar2 b{
+    color: red;
+    font-weight: bolder;
+    position: absolute;
+    margin: 60px 0 0 50px;
+}
+.bar2 img{
+    height: 140px;
+    width: 220px;
+    object-fit: scale-down;
+    border: 1px solid;
+    border-radius: 10%;
+    margin:-10px 0 20px 200px;
+}
+
+.bar3{
+    float: right;
+    width: 467px;
+    /* position: absolute; */
+}
+.bar3 a{
+    font-weight: bolder;
+}
+.bar3 label{
+    margin: 0 0 120px 30px;
+    color: red;
+    font-weight: bold;
+}
+.bar3 i{
+    margin: 40px 0 0px 30px;
+    color: rgb(137, 183, 244);
+    font-weight: bold;
+    font-size: xx-large;
+    position: absolute;
+}
+.bar3 b{
+    color: red;
+    font-weight: bolder;
+    position: absolute;
+    margin: 60px 0 0 50px;
+}
+.bar3 img{
+    height: 140px;
+    width: 220px;
+    object-fit:scale-down;
+    border: 1px solid;
+    border-radius: 10%;
+    margin:-10px 0 18px 200px;
+}
+.footer {
+    background: url(./nav.jpg);
+    margin-top: 920px;
+    /* padding: 10px 0 10px 0; */
+
+}
+
+.footer .f1,
+.f2 {
+    background: url(./login2.jpg);
+    padding: 5px 0 5px 0;
+}
+
+.footer .f1 p,
+.footer .f2 p {
+    color: aliceblue;
+    text-align: center;
+}
+
+.f2 span {
+    color: red;
+}
+
+
+/* -----------------------galarry page------------------------------------ */
+.content .bar1{
+    border-bottom: 1px solid black;
+    height: 100px;
+}
+.content .bar1 img{
+    margin: 0 20px 0 50px;
+    padding: 10px 0;
+
+}
+.content .b1{
+    margin: 10px;
+}
+.content .b1 .sub{
+    height: 260px;
+    width: 220px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 16px;
+    float: left;
+}
+.content .b1 .sub1{
+    height: 150px;
+    width: 200px;
+    margin: auto;
+    border: 1px ;
+
+}
+.content .b1 .sub1 img{
+    object-fit: contain;
+    padding:25px 10px;
+}
+.sub p{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.sub span{
+    color: red;
+    font-weight: bold;
+}
+.sub button{
+    margin: 5px 0;
+    padding: 10px 20px;
+    background:url(./nav.jpg);
+    color: aliceblue;
+}
+
+
+
+@supports selector(::-webkit-scrollbar) {
+    *::-webkit-scrollbar {
+        background: black;
+        width: 0px;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background: cornflowerblue;
+        height: 0px;
+    }
+}

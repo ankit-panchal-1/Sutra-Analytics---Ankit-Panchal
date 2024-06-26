@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(63, 89, 89, 0.571);
+        }
+
+        .image {
+            height: 270px;
+            width: 250px;
+            margin: auto;
+            margin-top: 50px;
+            background-color: slateblue;
+            border: 10px solid rgba(0, 0, 255, 0.457);
+            overflow: hidden;
+            position: relative;
+            transition: 0.35s;
+        }
+
+        .box_1 {
+            height: 100%;
+            width: 100%;
+            background-image: url("/images/horse.gif");
+            background-repeat: no-repeat;
+            transition: all 0.35s linear;
+        }
+
+        .box_1 img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .image:hover {
+            box-shadow: 0 0 40px 20px rgb(103, 241, 241), 0 0 50px 20px red;
+        }
+
+        .image:hover .box_1 {
+            transform: scale(0.95);
+            filter: grayscale(100) brightness(0.7);
+        }
+
+        .image:hover .box_2 {
+            transform: translateX(50px);
+        }
+
+        .box_2 {
+            width: 140px;
+            transition: 1s;
+            position: absolute;
+            transform: translateX(-200px);
+            top: 70%;
+            color: rgb(155, 212, 212);
+        }
+
+        .box_2 h1 {
+            font-size: 20px;
+            text-shadow: 0 0 20px rgb(255, 5, 5), 0 0 30px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image">
+        <div class="box_1"></div>
+        <div class="box_2">
+            <h1>Horse running with two legs</h1>
+        </div>
+    </div>
+</body>
+
+</html>

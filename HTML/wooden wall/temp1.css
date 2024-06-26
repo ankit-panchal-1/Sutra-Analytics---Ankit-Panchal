@@ -1,0 +1,274 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background: url(./images/templatemo_body.jpg);
+    background-position: top;
+}
+
+.header {
+    background: url(./images/templatemo_header.png);
+    height: 100px;
+    width: 982px;
+}
+
+.header a {
+    /* display: block; */
+    float: left;
+    margin: 20px 0 0 140px;
+    font-size: xx-large;
+    color: #600;
+    text-decoration: none;
+}
+
+.header span {
+    display: block;
+    font-size: 20px;
+    color: #000;
+}
+
+.manu {
+    background: url(./images/templatemo_menu.png);
+    height: 40px;
+    width: 950px;
+}
+
+.manu a {
+    float: left;
+    width: 100px;
+    height: 30px;
+    padding: 10px 0 0 0;
+    margin: 0 -79px 0 80px;
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.manu .active {
+    background: url(./images/templatemo_menu_hover.png);
+
+
+}
+
+.manu a:hover {
+    color: green;
+    /* background: url(./images/templatemo_menu_hover.png) repeat-x; */
+}
+
+.contant {
+    background: url(./images/templatemo_body.png);
+    height: 490px;
+
+    width: 940px;
+}
+
+.contant .leftbar {
+    float: left;
+    height: 360px;
+    width: 350px;
+    margin: 65px 0 0 120px;
+}
+
+.contant .leftbar h1 {
+    color: greenyellow;
+}
+
+.contant .leftbar img {
+    margin-top: 20px;
+    width: 330px;
+}
+
+.contant .leftbar p {
+    color: aliceblue;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.contant .leftbar .p1 {
+    color: rgba(240, 248, 255, 0.715);
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.contant .leftbar a {
+    color: orange;
+}
+
+.contant .leftbar a:hover {
+    text-decoration: none;
+}
+
+.contant .rightbar {
+    float: right;
+    width: 420px;
+    margin: 69px 0 0 36px;
+}
+
+.contant .rightbar h1 {
+    color: greenyellow
+}
+
+.contant .rightbar p {
+    color: rgba(240, 248, 255, 0.612);
+    font-size: 14px;
+    margin: 20px 90px 50px 0;
+}
+
+.contant .rightbar .link li {
+    margin-bottom: 10px;
+}
+
+.contant .rightbar .link a {
+    text-decoration: none;
+    color: orange;
+    margin: 100px 20px;
+}
+
+.footer {
+    margin: 20px;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.footer p,
+a {
+    color: #ffffffbb;
+    /* text-decoration: none; */
+    font-size: 14px;
+}
+
+.footer a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+
+/* about                 */
+.about h1 {
+    float: left;
+    /* height: 360px; */
+    /* width: 350px; */
+    margin: 65px 0 0 120px;
+    color: greenyellow;
+}
+
+.about img {
+    /* margin-top: 20px; */
+    width: 245px;
+    float: left;
+    margin: 100px 30px 20px -128px;
+}
+
+.about p {
+    color: aliceblue;
+    margin: 100px 98px 0 0px;
+    font-size: smaller;
+}
+
+.about .p1 {
+    color: rgba(240, 248, 255, 0.605);
+    text-align: justify;
+    margin: 25px 98px 0 116px;
+    font-size: 16px;
+
+
+}
+
+.about a {
+    color: orange;
+}
+
+.about a:hover {
+    text-decoration: none;
+}
+
+.service label {
+    color: rgba(240, 248, 255, 0.537);
+}
+
+.service input,
+textarea {
+    width: 300px;
+    height: 30px;
+    margin: 0 0 20px 0;
+    background-color: #000;
+}
+
+.service button {
+    /* margin: 0 136px 0 0; */
+    height: 30px;
+    background-color: #000;
+    color: aliceblue;
+    width: 80px;
+}
+
+.gallery {
+    margin: 0 0 0 88px;
+    width: 775px;
+    height: 480px;
+}
+
+.gallery h1 {
+    color: yellowgreen;
+    margin: 40px 0px 40px 35px;
+}
+
+.gallery .bar {
+    height: 170px;
+    width: 675px;
+}
+
+.bar img {
+    float: left;
+    margin: 3px 30px 0 0;
+    border: 3px solid rgba(10, 67, 69, 0.954);
+}
+
+h3 {
+    /* float: right; */
+    color: greenyellow;
+    margin-bottom: 10px;
+
+}
+
+.bar a {
+    font-weight: bold;
+    font-size: larger;
+    color: orange;
+    text-decoration: none;
+}
+
+.bar a:hover {
+    text-decoration: underline;
+    color: yellowgreen;
+}
+
+p {
+    color: rgba(240, 248, 255, 0.521);
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.sub {
+    overflow-x: hidden;
+    width: 715px;
+    height: 300px;
+    /* display: none; */
+
+}
+
+@supports selector(::-webkit-scrollbar) {
+    *::-webkit-scrollbar {
+        background: black;
+        width: 0px;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background: cornflowerblue;
+        height: 0px;
+    }
+}

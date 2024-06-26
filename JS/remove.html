@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Remove items from a dropdown list</title>
+</head>
+
+<body>
+    <form>
+        <select id="colorSelect">
+            <option>Red</option>
+            <option>Green</option>
+            <option>White</option>
+            <option>Black</option>
+        </select>
+        <br>
+        <input type="button" onclick="removecolor()" value="Select and Remove">
+    </form>
+</body>
+<script>
+    function removecolor() {
+        let sel_color = document.getElementById("colorSelect");
+        let sel_col_num = sel_color.sel_col_num;
+
+        if (sel_col_num !== -1) {
+            sel_color.remove(sel_col_num);
+        } else {
+            alert("Please select an item to remove.");
+        }
+    }
+</script>
+
+</html>

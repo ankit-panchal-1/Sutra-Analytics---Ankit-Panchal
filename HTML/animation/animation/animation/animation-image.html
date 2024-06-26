@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            height: 300px;
+            width: 300px;
+            background-color: olive;
+            border-radius: 10px;
+            margin-top: 4%;
+            margin-bottom: 10px;
+            margin-left: 38%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .box::before {
+            content: '';
+            background-color: black;
+            height: 140%;
+            width: 200px;
+            position: absolute;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: animate 5s linear infinite;
+        }
+
+        .box::after {
+            content: '';
+            background-color: olive;
+            inset: 15px;
+            position: absolute;
+            border-radius: 10px;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .container {
+            height: 1100px;
+            width: 100%;
+            background-color: cornflowerblue;
+            padding-top: 10px;
+        }
+
+        .container-image {
+            height: 450px;
+            width: 70%;
+            margin-top: 30px;
+        }
+
+        .container-image img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .image-2 {
+            float: right;
+            animation: fadeRight 5s linear normal;
+        }
+
+        .image-1 {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: fadeLeft 5s linear normal;
+        }
+
+        @keyframes fadeLeft {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeRight {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="container">
+        <div class="container-image image-1">
+            <img src="images/nature_image_2.jpeg">
+        </div>
+        <div class="container-image image-2">
+            <img src="images/nature_image_5.jpg">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form3</title>
+</head>
+<style>
+    table{
+        height: 400px;
+        width: 400px;
+        border: 1px solid blue;
+    }
+    th{
+        background-color: blue;
+        color: aliceblue;
+        text-align: start;
+    }
+    input,select{
+        width: 350px;
+        margin-left: 15px;
+    }
+    label{
+        margin-left: 15px;
+    }
+    button{
+        background-color: blue;
+        color: aliceblue;
+        margin: 2px;
+        height: 30px;
+    }
+    .btn{
+        background-color: red;
+        margin-left: 15px;
+
+    }
+    .td1{
+        background-color: aqua;
+    }
+    textarea{
+        height: 100px;
+        width: 350px;
+        margin-left: 15px;
+    }
+    
+</style>
+
+<body>
+    <center>
+        <form action="">
+            <table>
+                <tr>
+                    <th>Registration</th>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name">Name</label> <br>
+                        <input type="text" name="name" id="" placeholder="name">
+                    </td>
+                </tr>
+                <var>
+                    <tr>
+                        <td>
+                            <label for="Email">Email</label> <br>
+                            <input type="email" name="email" id="" placeholder="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Password</label> <br>
+                            <input type="password" name="password" id="" placeholder="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="address">Address</label> <br>
+                            <textarea name="address" id="" ></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">City</label> <br>
+                            <select name="city" id="city" >
+                                <option value="">select</option>
+                                <option value="">ahmedabad</option>
+                                <option value="">mehsana</option>
+                                <option value="">gandhinagar</option>
+    
+                            </select> <br><br>                       </td>
+                    </tr>
+                    <tr>
+                        <td class="td1">
+                            <button class="btn">click here</button> <button>Read more</button> <button>Login</button>
+                        </td>
+                    </tr>
+            </table>
+        </form>
+    </center>
+
+</body>
+
+</html>

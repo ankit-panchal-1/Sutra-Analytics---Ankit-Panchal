@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #A1CCD1;
+        }
+
+        .flower {
+            height: 80px;
+            width: 80px;
+            background-color: #E9B384;
+            border-radius: 50%;
+            margin: auto;
+            position: relative;
+        }
+
+        .flower::after {
+            content: "";
+            background-color: #4f4237;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .c1 {
+            height: 50px;
+            width: 50px;
+            background-color: #303d44a7;
+            border-radius: 50%;
+            position: absolute;
+            margin-left: 15px;
+            margin-top: 15px;
+            transition: all 0.45s linear;
+        }
+
+        .flower:hover #c1 {
+            transform: translateX(80px);
+        }
+
+        .flower:hover #c2 {
+            transform: translate(60px, 60px);
+        }
+
+        .flower:hover #c3 {
+            transform: translate(0px, 80px);
+        }
+
+        .flower:hover #c4 {
+            transform: translate(-60px, 60px);
+        }
+
+        .flower:hover #c5 {
+            transform: translate(-80px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flower">
+        <div class="c1" id="c1"></div>
+        <div class="c1" id="c2"></div>
+        <div class="c1" id="c3"></div>
+        <div class="c1" id="c4"></div>
+        <div class="c1" id="c5"></div>
+    </div>
+</body>
+
+</html>

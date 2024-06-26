@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+
+        body {
+            background-color: #7BD3EA;
+        }
+
+        .container {
+            height: 350px;
+            width: 650px;
+            margin: auto;
+        }
+
+        .box {
+            height: 200px;
+            width: 40px;
+            background-color: #163020;
+            margin: auto;
+            animation: upDown 1.5s infinite linear normal;
+            position: relative;
+            display: inline-block;
+            transition: 0.5s;
+            margin-left: 10px;
+        }
+
+        .circle {
+            margin: auto;
+            height: 40px;
+            width: 40px;
+            background-color: #092635;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -50px;
+        }
+
+        @keyframes upDown {
+            70% {
+                transform: translateY(-60px);
+            }
+
+            100% {
+                transform: translate(0);
+            }
+        }
+
+        .box:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .box:nth-child(2n) {
+            animation-delay: 0.65s;
+        }
+
+        .box:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .box:nth-child(5) {
+            animation-delay: 1s;
+        }
+
+        .box:nth-child(7) {
+            animation-delay: 1.1s;
+        }
+
+        .box:nth-child(9) {
+            animation-delay: 0.35s;
+        }
+
+        .box:nth-child(11) {
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="circle"></div>
+        </div>
+        <div class="box">
+            <div class="circle"></div>
+        </div>
+        <div class="box">
+            <div class="circle"></div>
+        </div>
+        <div class="box">
+            <div class="circle"></div>
+        </div>
+        <div class="box">
+            <div class="circle"></div>
+        </div>
+        <div class="box">
+            <div class="circle"></div>
+        </div>
+        <div class="box">
+            <div class="circle"></div>
+        </div>
+        <div class="box">
+            <div class="circle"></div>
+        </div>
+        <div class="box">
+            <div class="circle"></div>
+        </div>
+        <div class="box">
+            <div class="circle"></div>
+        </div>
+        <div class="box">
+            <div class="circle"></div>
+        </div>
+        <div class="box">
+            <div class="circle"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

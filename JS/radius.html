@@ -1,0 +1,22 @@
+
+
+
+<html>
+ <head><title>pro4</title>
+
+ </head>
+ <body>
+  <label>Enter the radius of Sphere: </label>
+  <input type="text" id="txt" size="30"/><br>
+  <button onclick="volume()">Find volume</button>
+ </body>
+ <script>
+    function volume()
+    {
+     var t_val=document.getElementById("txt").value;
+     var rad=parseInt(t_val);
+     var vol=(4/3)*Math.PI*Math.pow(rad,3);
+     alert("Volume= "+vol);
+    }
+   </script>
+</html>

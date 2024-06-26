@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide all "button" elements and "nput" elements of type="button"
+
+
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    </script>
+
+</head>
+
+<body>
+
+ <ul>
+    <li>amit</li>
+    <li>sanjay</li>
+    <li>rahul</li>
+ </ul>
+ <input type="bu" name="submit" id="">
+    <button id="btn">
+        Click Me
+    </button>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $(":button").hide();
+            });
+        });
+    </script>
+</body>
+
+</html>

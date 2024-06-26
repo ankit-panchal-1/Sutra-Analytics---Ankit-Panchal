@@ -1,0 +1,322 @@
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: black;
+    padding: 5px 0;
+}
+
+.header .collapse .navbar-nav .nav-link {
+    color: #fff;
+    padding: 30px 20px 10px 20px;
+    margin: -15px 5px 10px;
+    font-size: 19px;
+}
+
+.header .collapse .navbar-nav .nav-link:hover {
+    background-color: rgba(255, 2, 2, 0.963);
+}
+
+.header .collapse .navbar-nav .nav-item i {
+    color: #fff;
+    margin: 0 15px;
+}
+
+.contact-page {
+    text-align: center;
+    width: 600px;
+    margin: auto;
+}
+
+.contact-page h2 {
+    font-weight: bolder;
+    font-size: 44px;
+    margin: 80px 0;
+}
+
+.contact-page form {
+    margin: 50px 0 100px;
+}
+
+.contact-page form .form-control {
+    background-color: rgba(123, 113, 102, 0.107);
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+.contact-page form .btn {
+    background-color: red;
+    border-radius: 40px;
+    color: #fff;
+    padding: 10px 60px;
+    font-weight: bold;
+}
+
+.contact-page form .btn:hover {
+    background-color: rgba(123, 113, 102, 0.107);
+    color: black;
+}
+
+.map {
+    margin: 70px 0;
+}
+
+.footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    height: 380px;
+    bottom: 0;
+}
+
+.footer .icon {
+    margin: 50px 0;
+    padding: 80px 0 0;
+}
+
+.footer .icon i {
+    padding: 10px;
+    font-size: x-large;
+    font-weight: 700;
+    margin: 0 3px;
+    background-color: #fff;
+    color: black;
+    border-radius: 50%;
+}
+
+.footer .icon-1 {
+    margin: 30px 0;
+}
+
+.footer .icon-1 span {
+    margin: 0 15px 0 5px;
+    font-size: small;
+
+}
+
+.footer .icon i:hover,
+.footer .icon-1 :hover {
+    color: red;
+}
+
+.footer form div {
+    width: 500px;
+    margin: auto;
+}
+
+.footer form .form-control {
+    border-radius: 0px;
+    padding: 15px;
+    width: 472px;
+    position: absolute;
+}
+
+.footer form i {
+    padding: 21px;
+    background-color: red;
+    font-weight: bolder;
+    position: relative;
+    left: 250px;
+}
+
+.footer .footer-line {
+    background-color: red;
+}
+
+.footer .footer-line p {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.footer .footer-line a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .footer-line a:hover {
+    color: black;
+}
+
+.blog h2 {
+    margin: 100px 0;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.blog .row {
+    text-align: center;
+}
+
+.blog .row .col span {
+    text-align: start;
+    padding: 20px;
+    background-color: red;
+    color: #fff;
+    position: absolute;
+}
+
+.blog .row .col h5 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: start;
+}
+
+.blog .row .col p {
+    text-align: start;
+}
+
+.blog .row .col .btn {
+    color: red;
+    padding: 10px 20px;
+    border: 1px solid red;
+
+}
+
+.blog .row .col .btn:hover {
+    color: gray;
+    border: 1px solid gray;
+}
+
+.about {
+    margin: 100px;
+}
+
+.about .col h2 {
+    font-weight: bolder;
+    font-size: 40px;
+
+
+}
+
+.about .col h3 {
+    margin: 20px 0;
+}
+
+.about .col p {
+    width: 460px;
+    margin: 20px 0 40px;
+}
+
+.about .col img {
+    height: 350px;
+    width: 550px;
+}
+
+.about .col .btn {
+    padding: 10px 30px;
+    border: 1px solid red;
+    color: red;
+    font-size: 20px;
+}
+
+.about .col .btn:hover {
+    border: 1px solid gray;
+    color: gray;
+
+}
+
+.coffee h2 {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 100px 0 70px;
+}
+
+.coffee .card {
+    width: 250px;
+    text-align: center;
+}
+
+.coffee .card .card-body {
+    background-color: black;
+    color: #fff;
+}
+
+.coffee .card .card-body:hover {
+    background-color: red;
+}
+
+.coffee .card h3 {
+    font-size: 20px;
+}
+
+.coffee .card .card-body .btn {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+#arrow {
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 40%;
+
+}
+#arrow:hover{
+    background-color:red ;
+}
+.coffee .slide {
+    position: relative;
+}
+
+
+.home .carousel{
+    margin: 100px 30px;
+    color: #fff;
+}
+.home .carousel h1{
+color: #fff;
+font-weight: bold;
+font-size: 70px;
+
+}
+.home .carousel p{
+    font-size: 18px;
+    margin: 20px 0;
+}
+.home .carousel .btn{
+    color: #fff;
+    background-color: red;
+    padding: 10px 30px;
+    margin: 0 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.home .carousel .btn1{
+    color: black;
+    background-color: #fff;
+    padding: 12px 30px;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+
+
+}
+.home .carousel .btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+.home .carousel .btn1:hover{
+    background-color: red;
+    color: #fff;
+}
+.home .carousel-indicators{
+    position: absolute;
+}
+.home .carousel-indicators #arrow {
+    padding: 20px;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    position: relative;
+    bottom: 0%;
+
+}
+.home .carousel-indicators i{
+    color: #fff;
+}

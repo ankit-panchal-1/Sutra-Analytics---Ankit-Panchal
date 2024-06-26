@@ -1,0 +1,92 @@
+.main {
+    border: 1px solid blue;
+    width: 100%;
+}
+
+.main h3 {
+    color: aliceblue;
+    background-color: blue;
+    margin: -10px 0 0 0;
+    padding: 6px 3px;
+}
+
+.sub1 {
+    /* float: left; */
+    margin: 20px 0 20px 0;
+    /* width: 900px; */
+
+}
+
+.sub1 label {
+    margin: 20px 200px 30px 20px;
+}
+
+.sub1 .name {
+    height: 30px;
+    width: 20%;
+    margin: 10px 20px;
+}
+
+.sub1 .gender {
+    margin: 0 20px;
+}
+
+.sub1 .casts {
+    height: 30px;
+    width: 20%;
+    margin: 10px 20px 10px 90px;
+}
+
+.sub1 .email {
+    height: 30px;
+    width: 45%;
+    margin: 0 20px 0 20px;
+}
+
+.sub1 .l1 {
+    margin: 0 415px 0 20px;
+}
+
+.sub1 .dob {
+    height: 30px;
+    width: 12%;
+    margin: 10px 12px 10px 20px;
+
+}
+
+.sub1 .tel {
+    height: 30px;
+    width: 45%;
+    margin: 10px 20px 0 24px;
+}
+
+.sub1 .l2 {
+    margin: 0 0 0 60px;
+}
+
+.sub1 .address {
+    margin: 10px 20px 0 20px;
+}
+
+.sub1 .tel2 {
+    width: 45%;
+    height: 30px;
+    margin: 10px 20px 10px 20px;
+}
+
+.sub1 .l3 {
+    margin: 0 -10px 0 245px;
+}
+
+
+.sub1 .lock {
+    height: 30px;
+    width: 20%;
+    margin: 0 20px 0 14px;
+}
+.sub1 .l4{
+    margin: 0 17% 0 20px;
+}
+.sub1 .l5{
+    margin: 0 180px 0 -30px;
+}

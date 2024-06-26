@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation While Scrolling</title>
+    <link rel="stylesheet" href="scrolling_effect.css">
+</head>
+
+<body>
+    <section class="sec-1 show-animate">
+        <h1 class="animate">Hi, I am Tushar Prajapati</h1>
+        <p class="animate">Scrolling Animation using HTML and CSS</p>
+    </section>
+
+    <section class="sec-2">
+        <h1 class="animate">Keep Scrolling</h1>
+        <p class="animate">Scrolling Animation using HTML and CSS</p>
+    </section>
+
+    <section class="sec-3">
+        <h1 class="animate">Good!</h1>
+        <p class="animate">Scrolling Animation using HTML and CSS</p>
+    </section>
+
+    <section class="sec-4">
+        <h1>Nice Buddy <span class="showRight-animate" style="--i:1"></span></h1>
+        <p>Scrolling Animation using HTML and CSS <span class="showRight-animate" style="--i:3"></span></p>
+    </section>
+
+    <section class="sec-5">
+        <div class="images">
+            <img src="/images/nature_image.jpeg" class="animate" style="--i:0">
+            <img src="/images/nature_image_2.jpeg" class="animate" style="--i:1">
+            <img src="/images/nature_image_3.jpg" class="animate" style="--i:2">
+        </div>
+    </section>
+
+    <!-- ---------- Script ------------- -->
+    <script>
+        let sections = document.querySelectorAll('section');
+
+        window.onscroll = () => {
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 150;
+                let height = sec.offsetHeight;
+
+                if (top >= offset && top < offset + height) {
+                    sec.classList.add('show-animate');
+                }
+                //Agar Repeating Animation use karna hai to yeh use karna hai
+                //If want to use the Repeating Animation, use this.
+                else {
+                    sec.classList.remove('show-animate');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

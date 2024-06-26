@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(109, 151, 151, 0.637);
+        }
+
+        .chay {
+            margin-top: 100px;
+            position: absolute;
+            /* border: 5px solid red; */
+        }
+
+        .ovl {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: orange;
+            box-shadow: inset 5px 5px 5px 5px white, inset -5px -5px white;
+            top: -20px;
+            left: 120px;
+            transform: rotateX(70deg);
+            z-index: 100;
+            border: 2px solid gray;
+
+        }
+
+
+
+        .tea {
+            position: absolute;
+            height: 80px;
+            width: 65px;
+            border: 10px solid white;
+            left: 310px;
+            top: 80px;
+            border-radius: 0 30px 80px 0;
+        }
+
+
+
+        .cup {
+            height: 200px;
+            width: 200px;
+            left: 120px;
+            top: 60px;
+            background-color: #fff;
+            position: absolute;
+            z-index: 10;
+            border-bottom-left-radius: 40%;
+            border-bottom-right-radius: 40%;
+            border-top-right-radius: 30px;
+            border-top-left-radius: 30px;
+
+
+        }
+
+        .dis {
+            height: 300px;
+            width: 450px;
+            top: 100px;
+            position: relative;
+            box-shadow: 0 30px 100px rgb(148, 144, 144) inset;
+            border: 3px solid gray;
+            border-radius: 50%;
+            background-color: aliceblue;
+            transform: rotateX(250deg);
+            border: 10px solid rgb(90, 90, 89);
+        }
+
+        .fog {
+            position: absolute;
+            z-index: 1;
+            padding: 0 20px;
+        }
+
+        .fog span {
+            position: absolute;
+            display: block;
+            left: 200px;
+            min-width: 8px;
+            height: 120px;
+            margin: 0 2px 50px;
+            border-radius: 50%;
+            background: #ffffffbb;
+            animation: animate 5s linear infinite;
+            opacity: 0;
+            filter: blur(8px);
+            animation-delay: calc(var(--i)*0.5s);
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(0) scaleX(1);
+                opacity: 0;
+            }
+
+            15% {
+                opacity: 1;
+            }
+
+            50% {
+                transform: translateY(-150px) scaleX(5);
+            }
+
+            95% {
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(-300px) scaleX(10);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chay">
+        <div class="fog">
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+
+        </div>
+        <div class="ovl"></div>
+        <div class="tea"></div>
+        <div class="cup"></div>
+        <div class="dis"></div>
+    </div>
+</body>
+
+</html>

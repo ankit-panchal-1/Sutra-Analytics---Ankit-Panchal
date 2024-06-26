@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 290px;
+            width: 100%;
+            background-color: darkcyan;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        img {
+            float: right;
+            margin-top: 5px;
+            position: absolute;
+            animation: horse 5s ease infinite alternate;
+        }
+
+        #img_2 {
+            float: right;
+            margin-top: 5px;
+            position: absolute;
+            animation: horse 5s linear infinite alternate;
+        }
+
+        @keyframes horse {
+            from {
+                right: 0%;
+            }
+
+            to {
+                right: 80%;
+                /* transform: rotateY(180deg); */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="images/horse.gif">
+    </div>
+    <div class="container">
+        <img src="images/horse.gif" id="img_2">
+    </div>
+</body>
+
+</html>

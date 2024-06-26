@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use the on() method to attach a click event handler to all <p> elements
+        Use a jQuery method to hide a <p> element when it is clicked on , and the speed should be "slow"
+
+            Use a jQuery method to show a <p> element.
+
+
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    </script>
+
+</head>
+
+<body>
+
+    <p>HTML Tutorial</p>
+    <p id ="2">CSS Tutorial</p>
+
+  <button>show</button>
+
+    <script>
+        $(document).ready(function () {
+            $("p").on("click", function () {
+                $(this).hide();
+            });
+            $("#2").on("click", function () {
+                $(this).hide('slow');
+            });
+            $("button").on("click", function () {
+                $('p').show('slow');
+            });
+        });
+    </script>
+</body>
+
+</html>

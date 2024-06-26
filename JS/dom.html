@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+
+<body>
+    <!-- Write a HTML code to display the message
+""This is DOM exercise"" , and when you click on the text , it displays the message ""OOPS don't click on the text""" -->
+
+    <span>(1)</span>
+    <p id="text" onclick="this.innerHTML = ' do not click on the text'">This is DOM exercise</p> <br>
+    <button onclick="third()">click me 3</button>
+    <br>
+    <p id="pg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aut reprehenderit nesciunt culpa quam
+        explicabo accusamus odit excepturi assumenda quas unde tempora, est dolores? Velit animi laborum magni saepe
+        unde?</p>
+    <br>
+    <button onclick="forth()">click me 4</button>
+
+    <br>
+    <form>
+        <label for="fName">First name</label>
+        <input type="text" name="fName" id="fName">
+        <br>
+        <label for="lName">Last name</label>
+        <input type="text" name="lName" id="lName">
+        <br>
+
+        <button onclick="sub()">click me</button>
+
+    </form>
+    <!-- Clicking on the button the font, font size, and color of the paragraph text will be changed. -->
+    <span>User Name=</span>
+    <p id='form'></p>
+    <!-- (A) HTML TABLE -->
+    <table id="demoA">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+        </tr>
+    </table>
+
+    <!-- (B) ADD ROWS CELLS -->
+    <script>
+        function addRow(top) {
+            // (B1) GET TABLE
+            var table = document.getElementById("demoA");
+
+            // (B2) INSERT ROW
+            if (top) { var row = table.insertRow(0); }
+            else { var row = table.insertRow(); }
+
+            // (B3) INSERT CELLS
+            var cell = row.insertCell();
+            cell.innerHTML = "AA";
+            cell = row.insertCell();
+            cell.innerHTML = "BB";
+        }
+    </script>
+    <input type="button" value="Add Bottom" onclick="addRow()">
+    <input type="button" value="Add Top" onclick="addRow(1)">
+
+</body>
+<script>
+    function third() {
+        let change = document.getElementById('text');
+        change.style.color = 'red';
+        change.style.font = "bolder"
+        change.style.fontSize = "30px"
+    }
+    function forth() {
+        let bg = document.getElementById('pg')
+        bg.style.backgroundColor = "purple"
+        bg.style.color = 'white';
+
+
+    }
+    function sub() {
+        let fname = document.getElementById('fName').value;
+        let lname = document.getElementById('lName').value;
+        ankit = document.getElementById("form");
+        ankit.innerHTML = fname + lname;
+    }
+
+</script>
+
+</html>

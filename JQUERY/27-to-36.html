@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>use a jQuery method to fade out a <div> element
+
+
+
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    </script>
+
+</head>
+
+<body>
+
+    <div class="1" style="background-color: red;height: 100px;width: 100px;margin: 10px;"></div>
+    <div class="3" style="background-color: green;;height: 100px;width: 100px;margin: 10px;"></div>
+    <div class="4" style="background-color: purple;height: 100px;width: 100px;margin: 10px;"></div>
+
+
+    <button id="button1">show 27</button>
+    <button id="button2">show 28</button>
+
+    <button id="button3">show 29</button>
+    <button id="button4">30</button>
+    <button id="button5">32</button>
+    <button id="button6">33</button>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                $(".1").fadeOut();
+            });
+            $("#button2").click(function () {
+                $(".3").fadeOut("slow");
+            }); $("#button3").click(function () {
+                $(".4").fadeToggle();
+            });
+            $("#button4").click(function () {
+                $(".1").fadeIn();
+                $(".2").fadeIn("slow");
+                $(".3").fadeIn(3000);
+            });
+            $("#button5").click(function () {
+                $(".1").fadeTo('slow',0.10);
+            });
+            $("#button6").click(function(){
+  $(".1").fadeToggle();
+  $(".2").fadeToggle("slow");
+  $(".3").fadeToggle(1000);
+});
+        });
+    </script>
+</body>
+
+</html>

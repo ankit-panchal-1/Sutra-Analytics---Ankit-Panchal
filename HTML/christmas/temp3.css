@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1263px;
+    height: 1400px;
+    background-color: #651014;
+}
+
+.header {
+    background: url(./images/templatemo_body.jpg);
+
+}
+
+.header .logo {
+    height: 250px;
+    width: 990px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header .logo img {
+    padding: 150px 0 0;
+}
+
+.navbar .menu {
+    height: 90px;
+    width: 990px;
+    margin: 0 auto;
+    background: url(./images/templatemo_menu.jpg);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 20px 80px 0;
+}
+
+.menu a {
+    color: goldenrod;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 30px 40px 0 ;
+    float: left;
+}
+.menu a:hover{
+    background: url(./images/templatemo_menu_hover.png)no-repeat;
+    background-position: left center;
+}
+.menu .active{
+    background: url(./images/templatemo_menu_hover.png)no-repeat;
+    background-position: left center;
+}
+.content {
+    width: 990px;
+    margin: auto;
+    height: 956px;
+    background: url(./images/templatemo_content.jpg);
+}
+
+.leftbar {
+    width: 610px;
+    float: left;
+    margin: 0 0 0 40px;
+}
+
+.leftbar a:hover {
+    text-decoration: underline;
+    text-decoration-color: goldenrod;
+
+}
+
+.left1 {
+    width: 610px;
+    background: url(./images/templatemo_content_top.png);
+    height: 30px;
+}
+
+.left2 {
+    width: 610px;
+    background: url(./images/templatemo_content_middle.png);
+    position: relative;
+}
+
+.post1 {
+    width: 550px;
+    height: 440px;
+    /* background: url(./images/templatemo_divider.png); */
+    margin: 0 30px 0;
+}
+
+.post1 h2 {
+    /* background: url(./images/tempatemo_header.jpg); */
+    color: rgba(60, 215, 60, 0.82);
+    font-size: 32px;
+    font-weight: 100;
+    padding: 10px 0;
+    margin: 0 0 10px 0;
+    /* background: url(./images/templatemo_header.png); */
+
+}
+
+.post1 p {
+    color: aliceblue;
+    margin: 0 0 20px;
+    font-size: smaller;
+}
+
+.post1 a {
+    text-decoration: none;
+    color: goldenrod;
+}
+
+.post1 img {
+    margin: 0 0 10px;
+
+}
+
+.left3 {
+    background: url(./images/templatemo_content_bottom.png);
+    height: 30px;
+}
+
+.rightbar {
+    width: 240px;
+    float: right;
+    height: 938px;
+    padding: 40px 40px 0 0;
+}
+
+.right1 {
+    margin: 0 0 40px;
+}
+
+.right1 h2,
+.right2 h2 {
+    color: aqua;
+    font-size: 25px;
+    margin: 0 0 20px;
+
+
+}
+
+.right1 ul {
+    list-style: none;
+}
+
+.right1 li {
+    margin: 0 0 10px;
+    /* padding: 10px ; */
+}
+
+.right1 a {
+    text-decoration: none;
+    padding: 3px 0 5px 30px;
+    color: goldenrod;
+    font-size: 16px;
+    background: url(./images/templatemo_list.png)no-repeat;
+    background-position: left;
+}
+
+.right1 a:hover {
+    text-decoration: underline;
+    color: goldenrod;
+}
+
+.right2 {
+    padding-bottom: 30px;
+}
+
+.right2 div {
+    /* background: url(./images/templatemo_divider.png);
+    background-position: bottom;
+    padding:0 0 20px; */
+}
+
+.right2 a {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.right2 a:hover {
+    text-decoration: underline;
+    color: goldenrod;
+}
+
+.right2 p {
+    color: aliceblue;
+    margin: 0 0 30px;
+    font-size: smaller;
+
+}
+
+.footer {
+    background:url(./images/templatemo_footer.jpg)no-repeat;
+    width: 990px;
+    height: 146px;
+    margin: auto;
+    
+}
+.footer1{
+    padding: 80px 0 0 210px;
+}
+.footer1 a{
+    margin: 0 30px 0;
+    color:  #ff000dc9;
+    text-decoration: none;
+    font-size: smaller;
+}
+.footer1 a:hover{
+    text-decoration: underline;
+}
+.footer p{
+    color: red;
+}
+.p1{
+    color: red;
+    font-size: smaller;
+    padding: 20px 0 0 80px;
+}
+.p1 a{
+    text-decoration: none;
+    margin: 0;
+}
+.p1 a:hover{
+    color: aliceblue;
+}
+.p2 p{
+    color: white;
+    font-size: smaller;
+    padding: 20px 0px 20px 150px;
+}
+.p2 a{
+    text-decoration: none;
+    color: goldenrod;
+    margin: 0;
+}
+.p2 a:hover{
+    color: gold;
+    text-decoration: underline;
+}
+
+
+.cmt{
+    color: aliceblue;
+    font-size: 28px;
+    margin: 30px 30px ;
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(219, 217, 212, 0.438);
+}
+.box1{
+    width: 550px;
+    margin: auto;
+    background: #39080a;
+
+    border-top: 2px solid greenyellow;
+    padding-bottom : 30px ;
+    margin-bottom:20px;
+}
+.box2{
+    width: 520px;
+    margin: auto;
+    margin-left: 60px;
+    background: #39080a;
+
+    border-top: 2px solid skyblue;
+    padding-bottom : 30px ;
+    margin-bottom:20px;
+}
+.box3{
+    width: 490px;
+    background: #39080a;
+    
+    border-top: 2px solid greenyellow;
+    padding-bottom : 30px ;
+    margin: 0 0 20px 90px;
+}
+
+.box1 img,
+.box2 img,
+.box3 img{
+    float: left;
+    padding: 15px 15px 50px 15px;
+}
+
+.box1 .box1c,
+.box2 .box1c,
+.box3 .box1c{
+    color: aliceblue;
+    padding: 15px;
+}
+
+.box1c .box1p{
+    color: green;
+    font-size: 22px;
+    font-weight: bold;
+}
+.box1p span{
+    color: aliceblue;
+    font-size: small;
+    padding-left: 10px;
+}
+.box1c p{
+    font-size: smaller;
+    margin-bottom:15px ;
+}
+.box1 button,
+.box2 button,
+.box3 button{
+    color: goldenrod;
+    background-color: #651014;
+    width: 80px;
+    height: 30px;
+    float: right;
+    margin-bottom: 20px;
+}
+.form{
+    width: 520px;
+    margin: auto;
+    background: #39080a;
+    padding:20px 20px;
+}
+.form label{
+    color: white;
+    font-size: smaller;
+}
+.form input{
+    margin: 10px 0;
+    width: 250px;
+}
+.form textarea{
+    margin: 10px 0;
+}
+.form button{
+    padding: 0px 20px;
+}

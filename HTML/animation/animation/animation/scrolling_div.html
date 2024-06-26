@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scrolling_div.css">
+</head>
+
+<body>
+    <h1>Animation Effect while Scrolling</h1>
+
+    <div class="box blue show">
+        <h2>Content</h2>
+    </div>
+    <div class="box red">
+        <h2>Content</h2>
+    </div>
+    <div class="box green">
+        <h2>Content</h2>
+    </div>
+    <div class="box orange">
+        <h2>Content</h2>
+    </div>
+    <div class="box blue">
+        <h2>Content</h2>
+    </div>
+    <div class="box red">
+        <h2>Content</h2>
+    </div>
+    <div class="box green">
+        <h2>Content</h2>
+    </div>
+    <div class="box orange">
+        <h2>Content</h2>
+    </div>
+    <div class="box blue">
+        <h2>Content</h2>
+    </div>
+    <div class="box red">
+        <h2>Content</h2>
+    </div>
+    <div class="box green">
+        <h2>Content</h2>
+    </div>
+    <div class="box orange">
+        <h2>Content</h2>
+    </div>
+</body>
+
+<script>
+    const boxes = document.querySelectorAll(".box");
+
+    window.addEventListener("scroll", checkBoxes);
+
+    function checkBoxes() {
+        const triggerBottom = window.innerHeight / 5 * 3;
+
+        boxes.forEach(box => {
+            const boxTop = box.getBoundingClientRect().top;
+
+            if (boxTop < triggerBottom) {
+                box.classList.add("show");
+            }
+            else {
+                box.classList.remove("show")
+            }
+        });
+    }
+    checkBoxes();
+</script>
+
+</html>

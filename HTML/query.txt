@@ -1,0 +1,358 @@
+use 1) Print All Department Names
+2)  Print All Sub Department Names of any one Department 
+3)  Print Name and Contact Number of All Employees
+4)  Print Employee Details of Specific One Department
+5)  Print All cities names start with 'D'
+6)  Print All States names start with 'G'
+7)  Print the maximum salary from salary
+8)  Print Employeename, Contact Number, Email of All Male
+9)  Print Employeename, Address of All female
+10) Print Employee name, Contact Number of Specific Department
+11) Print Employee Details from Ahmedabad city and Gujarat States
+12) Print Employee Name and Contact Number who are from Surat,Rajkot,Ahmedabad,Gandhinagar
+13) Print All Emaild  of females
+14) Insert the missing statement to get all the columns from the city table.  -> ___________ * from city;
+15)Write a statement that will select the fname column from the employee table
+16)Select all the different values from the lname column in the employee table.
+17)Select all records where the City column has the value "Surat"
+18)Use the NOT keyword to select all records where lname is NOT "Panchal"
+19)Select all records where the cityId column has the value 3
+20)Select all records where the City column has the value 'Surat' and the state_id column has the value 1 .
+21)Select all records where the City column has the value 'Surat' or 'Gwalior'
+22)Print all city names ending with "A".
+23)Write a SQL statement to rename the table state to new_state.
+24)Write a SQL statement to add a column region_id to the table city.
+25)Write a SQL statement to add a columns age as the first column of the table student.
+26)Write a SQL statement to add a column region_id after state_name to the table new_state.
+27)Write a SQL statement to change the data type of the column id to integer in the table new_state.
+28)Write a SQL statement to drop the column id from the table new_state.
+29)Write a SQL statement to change the name of the column state_name to state, keeping the data type and size same.
+30)Write a SQL statement to add a foreign key on state_id column of city table referencing to the primary key state_id of new_state table.
+31) Set a byDefault salary to 3000 if not entered
+32)Select only unique values from the subject column of subjects table.
+33)Select all values from the city_name column of city table.
+34)Select salary from salary table which is greater than 20000.
+35)Select only those employees name whose salary is greater than 20000.
+36)Select 3 employees having lowest salary.
+37)Select only first 5 employees .
+38)Sort all cities in ascending order 
+39)Sort all cities in descending  order 
+40)Write the query to find the average salary in each city in ascending order.   (doubt)
+41)Count number of students in each city where max marks cross 83.
+42)Increase the salary of all the existing employees with rs 2000.
+43)Add any column in an existing table using alter.
+44)Drop any column from an existing table using alter.
+45)Change the datatype of any column using alter .
+46)Change the constraint of any column using alter.
+47)Rename any table
+48)Rename any column of any table
+49)Delete all students who are living in Surat.
+50)Delete all students who scored less than 75 marks.
+51 to 60 . Make 10 different UPDATE queries by your own .
+"61)Create a database named Sutra . 
+Create a table inside Sutra Database for storing employee information (id,name,salary). 
+Add information in Sutra Database -> (1) Rina , 5000 , (2) Rima , 10000 ,(3) Tina , 15000 . 
+Select & view all your table data ."
+62)Delete the grade column.
+63)Write SQL commands to display the right exclusive join
+64)Write SQL commands to display the leftexclusive join
+"65)Get the names of all students who scored more than class average
+1.Find the average of class
+2.Find the names of students with marks > avg"
+"66)Find the names of all students with even roll numbers.
+1)Find the even roll nos.
+2)Find the names of students with even roll nos."
+67)Find the maximum marks from the students of Delhi.
+68)Write a SQL statement to drop the index indx_job_id from job_history table.
+69)Write a SQL statement to add an index named indx_job_id on job_id column in the table job_history.
+70)Write a SQL statement to drop the existing foreign key fk_job_id from job_history table on job_id column which is referencing to the job_id of jobs table.
+71) Write a SQL statement to add a foreign key constraint named fk_job_id on job_id column of job_history table referencing to the primary key job_id of jobs table.
+72)Write a SQL statement to add a foreign key on job_id column of job_history table referencing to the primary key job_id of jobs table.
+73)Write a SQL statement to drop the existing primary from the table locations on a combination of columns location_id and country_id.
+74)Write a SQL statement to add a primary key for a combination of columns location_id and country_id.
+75)Write a SQL statement to add a primary key for the columns location_id in the locations table.
+76)Write a SQL statement to change the name of the column state_province to state, keeping the data type and size same.
+77)Write a SQL statement to drop the column city from the table locations.
+78)Write a SQL statement change the data type of the column country_id to integer in the table locations.
+79)Write a SQL statement to add a column region_id after state_province to the table locations.
+80) Write a SQL statement to add a columns ID as the first column of the table locations.
+81)Write a query to display the names (first_name, last_name) using alias name "First Name", "Last Name"
+82)Write a query to get unique department ID from employee table.
+83)Write a query to get all employee details from the employee table order by first name, descending.
+84)Write a query to get the names (first_name, last_name), salary, PF of all the employees (PF is calculated as 15% of salary).
+85)Write a query to get the employee ID, names (first_name, last_name), salary in ascending order of salary.
+86) Write a query to get the total salaries payable to employees.
+87)Write a query to get the maximum and minimum salary from employees table
+88) Write a query to get the average salary and number of employees in the employees table.
+89) Write a query to get the number of employees working with the company.
+90). Write a query to get the number of jobs available in the employees table
+91) Write a query get all first name from employees table in upper case.
+92) Write a query to get the first 3 characters of first name from employees table.
+93)Write a query to calculate 171*214+625.
+94) Write a query to get the names (for example Ellen Abel, Sundar Ande etc.) of all the employees from employees table.
+95)Write a query to get first name from employees table after removing white spaces from both side
+96)Write a query to get the length of the employee names (first_name, last_name) from employees table.
+97)Write a query to check if the first_name fields of the employees table contains numbers.
+98) Write a query to select first 10 records from a table.
+"99)Write a query to get monthly salary (round 2 decimal places) of each and every employee
+Note : Assume the salary field provides the 'annual salary' information."
+100)Write a query to display the name (first_name, last_name) and salary for all employees whose salary is not in the range $10,000 through $15,000.
+101)Write a query to display the name (first_name, last_name) and department ID of all employees in departments 30 or 100 in ascending order.
+102)Write a query to display the name (first_name, last_name) and salary for all employees whose salary is not in the range $10,000 through $15,000 and are in department 30 or 100.
+103)Write a query to display the name (first_name, last_name) and hire date for all employees who were hired in 1987.
+104). Write a query to display the first_name of all employees who have both "b" and "c" in their first name.
+105) Write a query to display the last name, job, and salary for all employees whose job is that of a Programmer or a Shipping Clerk, and whose salary is not equal to $4,500, $10,000, or $15,000.
+106)Write a query to display the last name of employees whose names have exactly 6 characters.
+107)Write a query to display the last name of employees having 'e' as the third character.
+108)Write a query to display the jobs/designations available in the employees table.
+109)Write a query to display the name (first_name, last_name), salary and PF (15% of salary) of all employees.
+110) Write a query to select all record from employees where last name in 'BLAKE', 'SCOTT', 'KING' and 'FORD'.
+111) Write a query to list the number of jobs available in the employees table.
+112)Write a query to get the total salaries payable to employees.
+113) Write a query to get the minimum salary from employees table.
+114)Write a query to get the maximum salary of an employee working as a Programmer.
+115)Write a query to get the average salary and number of employees working the department 90.
+116)Write a query to get the highest, lowest, sum, and average salary of all employees.
+117)Write a query to get the number of employees with the same job.
+118)Write a query to get the difference between the highest and lowest salaries.
+119) Write a query to find the manager ID and the salary of the lowest-paid employee for that manager.
+120)Write a query to get the department ID and the total salary payable in each department
+121). Write a query to get the average salary for each job ID excluding programmer.
+122) Write a query to get the total salary, maximum, minimum, average salary of employees (job ID wise), for department ID 90 only.
+123)Write a query to get the job ID and maximum salary of the employees where maximum salary is greater than or equal to $4000.
+124)Write a query to get the average salary for all departments employing more than 10 employees.
+
+
+
+ <----------------------------------------------------ans--------------------------------------------ans--------------------------------------------------->
+1)select *from department;
+
+2)select *from sub_department where dept_id=1;
+
+3)select fname,contact from employee;
+
+4)select *from employee where dept_id=1;
+
+5)select * from city where city_name='D%';
+
+6)select * from state where state_name='g%';
+
+7)select max(salary) from salary;
+
+8)select fname,contact,email from employee where gender='m';
+
+9)select name,address from employee where gender="female";
+
+10)select name,contact from employee where dept_id=1;
+
+11)select from employee where city_id=1 and state_id=1;
+
+12)select name from employee where city_id=1 or city_id=2 or city_id=3 or city_id=4;
+
+13)select email from employee where gender="female";
+
+14)SELECT * FROM city;
+
+15)select fname from employee;
+
+16) SELECT DISTINCT lname FROM employee;
+
+17)select * from city where city_name="surat";
+
+18)select *from employee where not  lname="panchal";
+
+19) select * from employee where city_id=3;
+
+20)select *from employee where city_id="1" and state_id=1;
+
+21)select * from employee where city_id=1 or city_id=2;
+
+22)select * from city where city_name="%a";
+
+23) ALTER TABLE state RENAME TO new_state;
+
+24) alter table city add  COLUMN region_id int;
+
+25)alter table employee add column age int;
+
+26) alter table new_state add column region_id int;
+
+27)alter table new_state modify state_id int;
+
+28)alter table new_state drop column region_id;
+
+29)alter table new_state modify state_name state;
+
+30)ALTER TABLE city ADD CONSTRAINT fk_city_state FOREIGN KEY (state_id) REFERENCES new_state(state_id);
+
+31)ALTER TABLE employees ALTER COLUMN salary SET DEFAULT 3000;
+
+33) select city_name from city;
+
+34)select salary>20000 from salary;
+
+35)select name from employee where salary>20000;
+
+36)SELECT * FROM employee ORDER BY salary LIMIT 3;
+
+37)select *from employee where emp_id<=5;
+
+38)select city_name from city order by city_name ;
+
+39)select city_name from city order by city_name desc;
+
+40)SELECT city_id, AVG(salary) AS average_salary FROM employee GROUP BY city_id ORDER BY average_salary ASC;
+
+41)select subject, std_city, max(std_marks) as highest from student
+   group by subject, std_city order by subject, std_city;
+
+42)UPDATE employee SET salary = salary + 2000;
+
+43)alter table city add region_id int not null;
+
+44)alter table city drop region_id;
+
+45)alter table city modify region_id varchar(10) not null;
+
+46)
+
+47) ALTER TABLE new_state RENAME state;
+
+48)alter table city change city_name c_name varchar(100);
+
+49)alter table student drop where std_city='surat';
+
+50)alter table student drop where std_marks<75;
+
+
+51)UPDATE employee SET salary = salary + 3000;
+
+52)UPDATE employee SET lname = 'patel' where lname='panchal';
+
+53)UPDATE city SET city_name = 'baroda' where city_id=1;
+
+54)UPDATE sate SET state_name = 'baroda' where state_id=1;
+
+55)UPDATE salary SET  salary= 3000 where salary_id=1;
+
+56)UPDATE employee SET age = 20 where emp_id=1;
+
+57)UPDATE department SET dept_name = 'accountant' where dept_id=1;
+
+58)UPDATE sub_department SET sub_dept_name = 'junior accountant' where sub_dept_id=1;
+
+59)UPDATE student std_name = 'amar' where std_id=1;
+
+60)UPDATE student std_marks = 99 where std_id=1;
+
+61)create table emp_information (id int auto_increment primary key not null,name varchar(110) not null,salary bigint not null);
+insert into emp_information (name,salary) values ('rina',10000),('Rima',5000),('tina',15000);
+
+62)alter table student drop grade;
+
+63)SELECT fname,dept_name FROM employee
+right JOIN department ON employee.emp_id= department.dept_id;
+
+64)SELECT fname,dept_name FROM employee
+LEFT JOIN department ON employee.emp_id=department.dept_id;
+
+65)2) SELECT std_name FROM student  WHERE std_marks > (SELECT AVG(std_marks) FROM student);
+
+65)1)SELECT AVG(std_marks) FROM student;
+
+66)1)SELECT std_id FROM student WHERE std_id % 2 = 0;
+
+66)2)SELECT std_name FROM student WHERE std_id % 2 = 0;
+
+67)SELECT MAX(std_marks) FROM student WHERE std_city = 'ahmedabad';
+
+68) DROP INDEX indx_job_id ON job_history;
+
+69)CREATE INDEX indx_job_id ON job_history (job_id);
+
+81)SELECT fname AS "First Name", lname AS "Last Name" FROM employee;
+
+82)SELECT DISTINCT dept_id FROM employee;
+
+83)SELECT * FROM employee ORDER BY fname DESC;
+
+84)SELECT fname,lname,salary,salary * 0.15 FROM employee;
+
+85)SELECT emp_id, fname, lname, salary FROM employee ORDER BY salary;
+
+86)SELECT SUM(salary) FROM employee;
+
+87)SELECT MAX(salary) AS max_salary, MIN(salary) AS min_salary FROM employee;
+
+88)SELECT AVG(salary) AS avg_salary, COUNT(*) AS total_employee FROM employee;
+
+89)SELECT COUNT(*) FROM employee;
+
+90)
+
+
+91)SELECT UPPER(fname)FROM employee;
+
+92)SELECT SUBSTRING(fname, 1, 3)FROM employee;
+
+93)select 171*214+625;
+
+94)
+
+96)select length(concat(fname,lname) )from employee;
+
+97)
+
+98)SELECT * FROM employee LIMIT 1;
+
+99)SELECT emp_id,fname,ROUND(salary / 12, 2)FROM employee;
+
+100)SELECT fname,lname,salary FROM employee WHERE salary < 2000 OR salary > 1000;
+
+101)SELECT fname,lname,dept_id FROM employee WHERE dept_id IN (30, 100) ORDER BY dept_id;
+
+102)SELECT fname,lname,salary FROM employee WHERE (salary < 10000 OR salary > 15000) AND dept_id IN (30, 100);
+
+103)Select fname ,lname,reg_date from employee where reg_date='2012-02-02';
+
+104)SELECT fname FROM employee WHERE fname LIKE '%b%' AND fname LIKE '%c%';
+
+105)select fname,lname,salary from employee where job_name = "Programmer"  or job_name = "Shipping Clerk" and salary <>"1000" or salary<>"4000";
+
+106)SELECT lname FROM employee WHERE LENGTH(lname) = 6;
+
+107)select lname from employee where lname="___n%";
+
+108)
+
+109)SELECT fname, lname, salary, salary * 0.15 AS PF FROM employee;
+
+110)select *from employee where lname = 'BLAKE' or lname= 'SCOTT' or lname= 'KING' or lname= 'FORD';
+
+111)
+
+112)
+
+113)SELECT fname,salary FROM  employee where salary= (select min(salary) from employee);
+
+114)select max (salary ) from employee where job="programmer";
+
+115)
+
+116)
+
+117)
+
+118)
+
+119)
+
+120)
+
+121)
+
+122)
+
+123)
+
+124)SELECT dept_id, AVG(salary) AS average_salaryFROM employeeGROUP BY dept_id HAVING COUNT(*) > 10;

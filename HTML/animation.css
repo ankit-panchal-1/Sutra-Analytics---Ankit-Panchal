@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    background-color: antiquewhite;
+}
+
+.main .box1 {
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    animation-name: box;
+    animation-duration: 2s;
+    position: absolute;
+    animation-direction: normal;
+
+    background-color: blue;
+    border-radius: 50%;
+animation-iteration-count: infinite;
+}
+
+
+@keyframes box {
+    0% {
+        top: 0;
+        background-color: blue;
+        left: 0;
+        border-radius: 50%;
+
+    }
+
+    25% {
+        background-color: green;
+        left: 75%;
+        top: 0;
+        rotate: 90deg;
+        border-radius: 50%;
+    }
+
+    50% {
+        background-color: brown;
+        top: 75%;
+        left: 75%;
+        rotate: 180deg;
+        border-radius: 50%;
+
+    }
+
+    75% {
+        background-color: red;
+        top: 75%;
+        left: 0;
+        rotate: 360deg;
+        border-radius: 50%;
+
+    }
+
+    100% {
+        background-color: blue;
+        left: 0;
+        top: 0;
+    }
+
+}
+
